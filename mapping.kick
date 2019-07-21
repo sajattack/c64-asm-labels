@@ -1,4 +1,4 @@
-; ZERO PAGE
+// ZERO PAGE
 .label D6510   = $0000
 .label R6510   = $0001
 .label ADRAY1  = $0003
@@ -6,7 +6,7 @@
 .label CHARAC  = $0007
 .label ENDCHR  = $0008
 .label TRMPOS  = $0009
-.label VERCK   = $000A ; $0093
+.label VERCK   = $000A // $0093
 .label COUNT   = $000B
 .label DIMFLG  = $000C
 .label VALTYP  = $000D
@@ -28,7 +28,7 @@
 .label STREND  = $0031
 .label FRETOP  = $0033
 .label FRESPC  = $0035
-.label MEMSIZ  = $0037 ; $0282
+.label MEMSIZ  = $0037 // $0282
 .label CURLIN  = $0039
 .label OLDLIN  = $003B
 .label OLDTXT  = $003D
@@ -123,7 +123,7 @@
 .label FREKZP  = $00FB
 .label BASZPT  = $00FF
  
-; STACK
+// STACK
 .label BAD     = $0100
 
 .label BUF     = $0200
@@ -345,7 +345,7 @@
 .label EXPCON  = $BFBF
 .label EXP     = $BFED
 
-; VIC
+// VIC
 .label SP0X    = $D000
 .label SP0Y    = $D001
 .label SP1X    = $D002
@@ -392,7 +392,7 @@
 .label SP6COL  = $D02D
 .label SP7COL  = $D02E
 
-; SID
+// SID
 .label FRELO1  = $D400
 .label FREHI1  = $D401
 .label PWLO1   = $D402
@@ -423,7 +423,7 @@
 .label RANDOM  = $D41B
 .label ENV3    = $D41C
 
-; CIAs
+// CIAs
 .label CIAPRA  = $DC00
 .label CIAPRB  = $DC01
 .label CIDDRA  = $DC02
@@ -457,7 +457,7 @@
 .label CI2CRA  = $DD0E
 .label CI2CRB  = $DD0F
 
-; KERNAL
+// KERNAL
 .label POLY1   = $E043
 .label POLY2   = $E059
 .label RMULC   = $E08D
@@ -478,42 +478,42 @@
 .label INIT    = $E3BF
 .label WORDS   = $E460
 .label LP2     = $E5B4
-.label CINT    = $FF81 ; $FF5B
-.label IOINIT  = $FF84 ; $FDA3
-.label RAMTAS  = $FF87 ; $FD50
-.label RESTOR  = $FF8A ; $FD15 $A81D
-.label VECTOR  = $FF8D ; $FD1A
-.label SETMSG  = $FF90 ; $FE18
-.label SECOND  = $FF93 ; $ED89
-.label TKSA    = $FF96 ; $EDC7
-.label MEMTOP  = $FF99 ; $FE25
-.label MEMBOT  = $FF9C ; $FE34
-.label SCNKEY  = $FF9F ; $EA87
-.label SETTMO  = $FFA2 ; $FE21
-.label ACPTR   = $FFA5 ; $EE13
-.label CIOUT   = $FFA8 ; $EDDD
-.label UNTLK   = $FFAB ; $EDEF
-.label UNLSN   = $FFAE ; $EDFE
-.label LISTEN  = $FFB1 ; $ED0C
-.label TALK    = $FFB4 ; $ED09
-.label READST  = $FFB7 ; $FE07
-.label SETLFS  = $FFBA ; $FE00
-.label SETNAM  = $FFBD ; $FDF9
-.label OPEN    = $FFC0 ; $F34A $E1BE
-.label CLOSE   = $FFC3 ; $F291 $E1C7
-.label CHKIN   = $FFC6 ; $F20E
-.label CHKOUT  = $FFC9 ; $F250
-.label CLRCHN  = $FFCC ; $F333
-.label CHRIN   = $FFCF ; $F157
-.label CHROUT  = $FFD2 ; $F1CA
-.label LOAD    = $FFD5 ; $F49E $E168
-.label SAVE    = $FFD8 ; $F5DD $E156
-.label SETTIM  = $FFDB ; $F6E4
-.label RDTIM   = $FFDE ; $F6DD
-.label STOP    = $FFE1 ; $F6E4 $A82F
-.label GETIN   = $FFE4 ; $F13E
-.label CLALL   = $FFE7 ; $F32F
-.label UDTIM   = $FFEA ; $F69B
-.label SCREEN  = $FFED ; $E505
-.label PLOT    = $FFF0 ; $E50A
-.label IOBASE  = $FFF3 ; $E500
+.label CINT    = $FF81 // $FF5B
+.label IOINIT  = $FF84 // $FDA3
+.label RAMTAS  = $FF87 // $FD50
+.label RESTOR  = $FF8A // $FD15 $A81D
+.label VECTOR  = $FF8D // $FD1A
+.label SETMSG  = $FF90 // $FE18
+.label SECOND  = $FF93 // $ED89
+.label TKSA    = $FF96 // $EDC7
+.label MEMTOP  = $FF99 // $FE25
+.label MEMBOT  = $FF9C // $FE34
+.label SCNKEY  = $FF9F // $EA87
+.label SETTMO  = $FFA2 // $FE21
+.label ACPTR   = $FFA5 // $EE13
+.label CIOUT   = $FFA8 // $EDDD
+.label UNTLK   = $FFAB // $EDEF
+.label UNLSN   = $FFAE // $EDFE
+.label LISTEN  = $FFB1 // $ED0C
+.label TALK    = $FFB4 // $ED09
+.label READST  = $FFB7 // $FE07
+.label SETLFS  = $FFBA // $FE00
+.label SETNAM  = $FFBD // $FDF9
+.label OPEN    = $FFC0 // $F34A $E1BE
+.label CLOSE   = $FFC3 // $F291 $E1C7
+.label CHKIN   = $FFC6 // $F20E
+.label CHKOUT  = $FFC9 // $F250
+.label CLRCHN  = $FFCC // $F333
+.label CHRIN   = $FFCF // $F157
+.label CHROUT  = $FFD2 // $F1CA
+.label LOAD    = $FFD5 // $F49E $E168
+.label SAVE    = $FFD8 // $F5DD $E156
+.label SETTIM  = $FFDB // $F6E4
+.label RDTIM   = $FFDE // $F6DD
+.label STOP    = $FFE1 // $F6E4 $A82F
+.label GETIN   = $FFE4 // $F13E
+.label CLALL   = $FFE7 // $F32F
+.label UDTIM   = $FFEA // $F69B
+.label SCREEN  = $FFED // $E505
+.label PLOT    = $FFF0 // $E50A
+.label IOBASE  = $FFF3 // $E500
